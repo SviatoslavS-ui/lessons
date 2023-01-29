@@ -1,0 +1,31 @@
+/* reset styles */
+@import url(reset.css);
+
+h1 {
+    font-size: large;
+    color: tomato;
+}
+
+div[class*="-info"] {
+    color: aqua;
+}
+
+p.info-text {
+    color: blueviolet;
+}
+
+#creation_reason {
+    color: brown;
+}
+
+div.history li {
+    color: black;
+}
+
+p#additional {
+    color: cornflowerblue;
+}
+
+.additional-info > p.text {
+    color: rgb(24, 159, 24);
+}
