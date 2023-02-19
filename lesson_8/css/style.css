@@ -1,0 +1,131 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.head-background {
+    max-width: 100%;
+    min-height: 600px;
+    background: url("../img/background.png") 0 0 no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 0px 5px 5px 0px;
+    padding-top: 330px;
+    padding-bottom: 100px;
+}
+
+div[class*="-container"] {
+    margin: 0px auto 0px auto;
+    max-width: 1300px;
+}
+
+.head-container {
+    padding-left: 100px;
+}
+
+.head-content {
+    color: #E5E5E5;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0 auto;
+}
+
+.head-content *:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.head-content p {
+    max-width: 400px;
+}
+
+* h2 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 40px;
+    max-width: 605px;
+}
+
+.main-background {
+    background: rgb(228, 227, 244);
+    background: linear-gradient(90deg, rgba(228, 227, 244, 1) 0%, rgba(227, 227, 241, 1) 27%, rgba(208, 229, 244, 1) 64%, rgba(93, 211, 235, 1) 96%);
+}
+
+.images-container {
+    padding-top: 100px;
+    font-size: 0px;
+}
+
+.images-container img {
+    max-width: 33%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.uls-container {
+    padding: 100px;
+}
+
+ul[class*="list"] {
+    padding-top: 50px;
+    padding-right: 50px;
+    display: inline-block;
+}
+
+ul[class*="list"] li {
+    padding: 10px;
+    max-width: 500px;
+    color: darkolivegreen;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+ul[class*="list"] li:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.list1 li:hover {
+    background-color: #d0e5f4;
+}
+
+.list1 li::before {
+    content: "";
+    vertical-align: middle;
+    display: inline-block;
+    background-image: url("../img/check-hover.jpg");
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    transition: all 0.3s;
+}
+
+.list1 li:hover::before {
+    transform: rotate(-360deg) scale(1.2);
+}
+
+.list2 li {
+    text-decoration: underline;
+}
+
+.list2 li::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+    background-color: #77608d;
+}
+
+.list2 li:hover {
+    color: red;
+}
+
+.list2 li:hover::after {
+    background-color: red;
+}
